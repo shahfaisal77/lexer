@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trade Page</title>
+    <!-- common css background color-->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <!-- TradingView charting library script online cdn-->
+<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script> 
+
+  
+</head>
+<body>
+
+    <!-- Main container div -->
+    <div class="main-container">
+
+        <!-- Including the common HTML navbar and its style -->
+        <iframe src="includes/navbar.html" frameborder="0" width="100%" height="100%"></iframe>
+
+        
+        <div class="left-right-container">
+        <div class="trade-left-section">
+            <section class="rounded-section">
+                <button>Long</button>
+                <button>Short</button>
+                <button>Swap</button>
+            </section>
+            
+            <section class="rounded-section second-row">
+                <button class="second-row-button">Market</button>
+                <button class="second-row-button">Limit</button>
+            </section>
+            <label class="trade-label" style="color: white;">Pay</label>
+            <section class="rounded-section third-row">
+                <input type="number" class="input-number" placeholder="0.0">
+                <select class="dropdown" onclick="showOptions(event)">
+                    <option value="BTC" hidden>Bitcoin(BTC</option>
+                    <option value="ETH" hidden>Ethereum(ETH</option>
+                    <option value="WETH" hidden>Wrapped Ethereum(WETH</option>
+                    <option value="USDC.e" hidden>Bridged USDC(USDC.e</option>
+                    <option value="USDT" hidden>Tether(USDT</option>
+                   
+                </select>
+            </section>
+
+            <div style="display: flex;">
+                <label class="label" style="color: white;">Long</label>
+                <label class="label" style="color: white; margin-left: 150px;">Leverage:1.10x</label>
+              </div>
+            
+            <section class="rounded-section third-row">
+                
+                <input type="number" class="input-number" placeholder="0.0">
+                <select class="dropdown" onclick="showOptions(event)">
+                    <option value="BTC" hidden>Bitcoin(BTC</option>
+                    <option value="ETH" hidden>Ethereum(ETH</option>
+                    <option value="WETH" hidden>Wrapped Ethereum(WETH</option>
+                    <option value="USDC.e" hidden>Bridged USDC(USDC.e</option>
+                    <option value="USDT" hidden>Tether(USDT</option>
+                   
+                </select>
+            </section>
+
+            
+
+
+        </div>
+
+       <!-- New section for TradingView chart -->
+       <section class="chart-container">
+        <div class="chart-top-box">
+            <select class="dropdown" onclick="showOptions(event)">
+                <option value="BTC" hidden>Bitcoin(BTC</option>
+                <option value="ETH" hidden>Ethereum(ETH</option>
+                <option value="WETH" hidden>Wrapped Ethereum(WETH</option>
+                <option value="USDC.e" hidden>Bridged USDC(USDC.e</option>
+                <option value="USDT" hidden>Tether(USDT</option>
+               
+            </select>
+
+
+            <div class="fixed-text">
+      <div class="row">
+        <table >
+            <thead>
+              <tr>
+                <th>$-</th>
+                <th>24h Change</th>
+                <th>24h High</th>
+                <th>24h Low</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>$-</td>
+                <td>-</td>
+                <td>43,859.13</td>
+                <td>43,481.10</td>
+              </tr>
+            </tbody>
+          </table>
+          
+      </div>
+    </div>
+  </div>
+
+
+          <div id="tv_chart_container"></div>
+        </section>
+
+        
+
+    </div><!--end of trade left right section-->
+</div>
+
+
+
+
+    <script src="scripts/script.js"></script>
+
+
+
+</body>
+</html>

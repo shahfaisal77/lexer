@@ -1,0 +1,321 @@
+/*common navbar and body color........ starting*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Sk-Modernist', sans-serif;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+    background: linear-gradient(to right, #0E1222, #152248,#152248, #3B4D7E, #7D8AA8, #9FAABD, #C8D0D6);
+}
+
+.page-container {
+    width: 100%;
+    background: linear-gradient(to right, #101423, #1C294D, #3B4560, #676E7C, #81868C);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+   
+    padding: 1px 10px;
+    /*border: 2px solid #f00a0a;*/
+}
+
+nav {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 8px;
+    margin: 0 18px;
+    border-radius: 10px;
+    transition: color 0.3s; 
+}
+
+nav a:hover {
+    color: #2980b9; 
+}
+
+.connect-wallet-btn {
+    border: 2px solid #8A91A1;
+    color: #fff;
+    padding: 5px 45px;
+    margin: 5px;
+    margin-left: 25px;
+    border-radius: 15px; 
+    cursor: pointer;
+    background: transparent; 
+    font-size: 14px;
+    text-align: center;
+    
+}
+
+.connect-wallet-btn:hover {
+    background: transparent; 
+}
+
+.lexer-link {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px; 
+    margin-left: 60px;
+}
+
+/*common navbar and body color........ Ending*/
+
+/*----------------------------------------------------------------------------*/
+
+/* Styles for the trade left section...... Starting */
+
+
+.trade-left-section {
+    width: 320px;
+    height: 500px;
+    background: linear-gradient(to right, #1B2138, #22305B);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  
+    border: 3px solid #1E2849; 
+    border-radius: 15px;
+    margin-top: 0;
+    margin-left: 25px;
+    position: relative;
+    top: -55px;
+}
+
+
+
+.rounded-section {
+    border: 2px solid #8B91A5;
+    background-color: #51586F;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin-top: -5px;
+    padding: 1px;
+    width: 100%; 
+    display: flex;
+    justify-content: space-around; 
+}
+
+.second-row
+{
+    margin-top: 7px;
+}
+
+
+button {
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 33px;
+    margin-bottom: 2px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.second-row-button {
+    padding: 5px 57px; 
+}
+
+button:hover {
+    background-color: #2465A6;
+
+    color: #eceef5; 
+}
+
+
+/* Styles for the input and dropdown in the third row */
+.third-row
+{
+    background-color: #2A324A;
+    border: none;
+    padding: 5px;
+    margin-top: 10px;
+}
+.input-number,
+.dropdown {
+    width: 50%; 
+    padding: 5px;
+    margin-right: 5px;
+    border: none; 
+    background-color: transparent; /
+    color: #fff; 
+    outline: none; 
+}
+
+.input-number {
+    -moz-appearance: textfield; /* Firefox */
+}
+
+.input-number::-webkit-inner-spin-button,
+.input-number::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.dropdown {
+    width: 50%; 
+    padding: 5px;
+    border: none; 
+    background-color: transparent; 
+    color: #fff; 
+    cursor: pointer; 
+}
+
+
+.dropdown:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styles for the trade left section...... ending 
+/*menue ---------------------------------------*/
+
+.custom-dropdown-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 50vw;
+    background-color: #51586F;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+}
+
+.dropdown-options {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-options li {
+    padding: 8px;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+.custom-dropdown:hover .dropdown-options {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+  .dropdown-options div {
+    font-weight: 700;
+    font-size: x-large;
+    cursor: pointer;
+    padding: 12px 40px;
+    white-space: nowrap;
+   
+  }
+  
+
+
+
+  
+  .dropdown-options div:hover {
+    background-color: #f2f2f2;
+  }
+  
+  /* Style the close button */
+  .dropdown-options button {
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: #9599A5;
+    cursor: pointer;
+  }
+  
+  /* chart css-------------------*/
+  .left-right-container {
+    display: flex;
+  }
+  .chart-container {
+    flex-grow: 1;
+    margin-left: 15px;
+    margin-top: 20px;
+    
+  }
+  #tv_chart_container {
+    width: 900px; 
+    height: 600px; 
+  }
+
+  .chart-top-box {
+    position: absolute;
+     top: 100px; 
+    display: flex;
+    justify-content: space-between;
+    width: 66%;
+    height: 40px; 
+    padding: 5px; 
+    border: 1px solid #ccc;
+    background-color: #2E374F; 
+    border-radius: 15px;
+  }
+  
+  .dropdown {
+    width: 110px; 
+  }
+  
+
+
+
+  .fixed-text {
+    color: white; 
+    
+  }
+ 
+  
+  
+  .fixed-text .row {
+    
+
+    transform: translateX(-330px); 
+  }
+
+  th, td {
+    padding: 0px 15px; 
+    font-weight: normal;
+  }
+ 
+  td {
+    font-weight: bold; 
+  }
+  
+  
